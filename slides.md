@@ -1,7 +1,7 @@
 ---
 highlighter: shiki
 css: unocss
-colorSchema: light
+colorSchema: dark
 transition: fade-out
 mdc: true
 layout: center
@@ -17,8 +17,8 @@ bgCenter:
 
 ---
 bgCenter:
-  x: 10
-  y: 20
+  x: 80
+  y: 80
   deg: 150
 ---
 
@@ -83,21 +83,206 @@ bgCenter:
 layout: quote
 bgCenter:
   x: 10
-  y: 50
-  deg: 46
+  y: 15
+  deg: 80
 ---
 
-# Hello
+# 目標: Vueをもっと理解する
 
-<div
-  v-click="[0,1]"
-  v-motion
-  :initial="{ x: 0 }"
-  :enter="{ x: 0, y: 0 }"
-  :click-1="{ x: 0, y: 30 }"
-  :click-2="{ y: 60 }"
-  :click-2-4="{ x: 40 }"
-  :leave="{ y: 0, x: 80 }"
->
-  Slidev
+---
+layout: quote
+bgCenter:
+  x: 50
+  y: 30
+  deg: 10
+---
+
+# WHY
+
+- 専門性を高める土台を作りたい
+- Nuxt2 → Nuxt3<span text-xs> (or Nuxt/Vue → ??? / ??? → Nuxt/Vue)</span>の技術選定に貢献したい
+- フロントエンドの未来と近い距離で活動したい
+
+---
+layout: two-cols-header
+bgCenter:
+  x: 40
+  y: 100
+  deg: 160
+---
+
+<div v-click="[1,3]"></div>
+
+# 何をやる？
+
+::left::
+
+<div h-100 flex="~ col" items-center justify-center>
+  <ul flex="~ col gap-10">
+    <li
+      v-motion
+      :initial="{opacity:1}"
+      :click-1="{opacity:1}"
+      :click-2-4="{opacity:0.1}"
+    >
+      Vueの内部実装を読んで記事をひとつ書く
+    </li>
+    <li
+      v-motion
+      :initial="{opacity:1}"
+      :click-1="{opacity:0.1}"
+      :click-2="{opacity:1}"
+      :click-3="{opacity:0.1}"
+    >
+      vue-fes-2025-websiteの実装を理解し、活用する
+    </li>
+    <li
+      v-motion
+      :initial="{opacity:1}"
+      :click-1-3="{opacity:0.1}"
+      :click-3="{opacity:1}"
+    >
+      Viteのドキュメント全部読む。(ついでに翻訳のPRを出す?)
+    </li>
+  </ul>
 </div>
+
+::right::
+
+<div h-100 flex="~ col" items-center justify-center>
+  <v-switch transition="fade">
+    <template #1>
+      <ul
+        v-motion
+        :initial="{opacity: 0}"
+        :click-1="{opacity: 1}"
+        :click-2="{opacity: 0}"
+        :leave="{opacity: 1}"
+        :duration="600">
+        <li>「OptionsAPIはCompositionsAPIを土台にしています！」の意味を確かめる</li>
+        <li>ドキュメントの冒頭に書いてあるんだけど、これに固執して深掘りしてみる</li>
+      </ul>
+    </template>
+    <template #2>
+      <ul
+        v-motion
+        :initial="{opacity: 0}"
+        :click-2="{opacity: 1}"
+        :click-3="{opacity: 0}"
+        :leave="{opacity: 1}"
+        :duration="600">
+        <li>モダンな技術構成、品質の高い設計を吸収する</li>
+        <li>吸収した知見をもとにポートフォリオサイトを作る</li>
+      </ul>
+    </template>
+    <template #3>
+      <ul
+        v-motion
+        :initial="{opacity: 0}"
+        :click-3="{opacity: 1}"
+        :leave="{opacity: 1}"
+        :duration="600">
+        <li>Vite+でたくさんの技術が密に連携する前に土台となる知識を得ておきたい</li>
+        <li>きちんとコントリビュートする心意気を忙しくなる前に作る</li>
+      </ul>
+    </template>
+  </v-switch>
+</div>
+
+---
+layout: two-cols-header
+bgCenter:
+  x: 80
+  y: 10
+  deg: 20
+---
+
+# 進捗(仮)
+
+::left::
+
+<div h-100 flex="~ col" items-center justify-center>
+  <ul flex="~ col gap-10">
+    <li
+      v-motion
+      :initial="{opacity:1}"
+      :click-1="{opacity:1}"
+      :click-2-4="{opacity:0.1}"
+    >
+      Vueの内部実装を読んで記事をひとつ書く<span px2 bg-hex-9dd4a270 rounded>Done!</span>
+    </li>
+    <li
+      v-motion
+      :initial="{opacity:1}"
+      :click-1="{opacity:0.1}"
+      :click-2="{opacity:1}"
+      :click-3="{opacity:0.1}"
+    >
+      vue-fes-2025-websiteの実装を理解し、活用する<span px2 bg-hex-9dd4a270 rounded>Done!</span>
+    </li>
+    <li
+      v-motion
+      :initial="{opacity:1}"
+      :click-1-3="{opacity:0.1}"
+      :click-3="{opacity:1}"
+    >
+      Viteのドキュメント全部読む。(ついでに翻訳のPRを出す?)
+    </li>
+  </ul>
+</div>
+
+::right::
+
+<div h-100 flex="~ col" items-center justify-center>
+<!-- NOTE: これ、v-ifと$clickでもっとスマートに実装できるのでは？ -->
+  <v-switch>
+    <template #1>
+      <div
+        v-click="[1,2]"
+        v-motion
+        :initial="{opacity: 0}"
+        :click-1="{opacity: 1}"
+        :click-2="{opacity: 0}"
+        :leave="{opacity: 1}"
+        :duration="600"
+      >
+        <p>vuejs/coreを読んで記事を一本書いた🎉</p>
+        <a href="https://zenn.dev/naofumik/articles/xxxxxxx" ><img src="/article.png" alt="笑顔でピースしている私"/></a>
+      </div>
+    </template>
+    <template #2>
+      <div
+        v-motion
+        :initial="{opacity: 0}"
+        :click-2="{opacity: 1}"
+        :click-3="{opacity: 0}"
+        :duration="600"
+      >
+        <p>アーキテクチャをがっつり参考にしてポートフォリオサイトを作成🎉</p>
+        <p>参考にしたポイントをまとめて記事にしたい...</p>
+        <a href="https://zenn.dev/naofumik/articles/xxxxxxx" ><img src="/portfolio.png" alt="笑顔でピースしている私"/></a>
+      </div>
+    </template>
+    <template #3>
+      <div
+        v-motion
+        :initial="{opacity: 0}"
+        :click-3="{opacity: 1}"
+        :click-4="{opacity: 0}"
+        :duration="600"
+      >
+        <p>翻訳しながら読み始めた！</p>
+      </div>
+    </template>
+  </v-switch>
+</div>
+
+---
+layout: center
+bgCenter:
+  x: 50
+  y: 100
+  deg: 20
+---
+
+# よろしくお願いします！
