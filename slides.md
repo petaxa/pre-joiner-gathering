@@ -101,7 +101,7 @@ bgCenter:
 
 - 専門性を高める土台を作りたい
 - Nuxt2 → Nuxt3<span text-xs> (or Nuxt/Vue → ??? / ??? → Nuxt/Vue)</span>の技術選定に貢献したい
-- フロントエンドの未来と近い距離で活動したい
+- JavaScriptの未来と近い距離で活動したい
 
 ---
 layout: two-cols-header
