@@ -142,7 +142,7 @@ bgCenter:
       :click-1-3="{opacity:0.1}"
       :click-3="{opacity:1}"
     >
-      Viteのドキュメント全部読む。(ついでに翻訳のPRを出す?)
+      Viteのドキュメント全部読む。
     </li>
   </ul>
 </div>
@@ -226,7 +226,7 @@ bgCenter:
       :click-1-3="{opacity:0.1}"
       :click-3="{opacity:1}"
     >
-      Viteのドキュメント全部読む。(ついでに翻訳のPRを出す?)
+      Viteのドキュメント全部読む。
     </li>
   </ul>
 </div>
