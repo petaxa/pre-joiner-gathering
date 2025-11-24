@@ -39,7 +39,7 @@ bgCenter:
     :click-1="{ x: 0, y: 0, opacity: 1 }"
     :duration="1000">
     <h3>出身</h3>
-    <img src="/tsukuba.png" w-30 rounded-full alt="笑顔でピースしている私"/>
+    <img src="/tsukuba.png" w-30 rounded-full alt="つくば市が赤く塗られた茨城県の白地図"/>
     <p>茨城県つくば市</p>
   </div>
 
@@ -50,10 +50,22 @@ bgCenter:
     :duration="1000">
     <h3>好きなもの</h3>
     <div relative>
-      <img src="/h3-fip.png" w-20 rounded-full absolute top-1 alt="笑顔でピースしている私"/>
-      <img src="/kashima.jpg" w-20 rounded-full absolute left-19 alt="笑顔でピースしている私"/>
-      <img src="/atomic.jpg" w-20 rounded-full absolute left-37 top-5 alt="笑顔でピースしている私"/>
-      <img src="/valorant.jpeg" w-20 rounded-full absolute left-48 top-20 alt="笑顔でピースしている私"/>
+      <div absolute top-1 w-20>
+        <img class="z-0" src="/h3-fip.png" rounded-full alt="H3ロケット飛行状況表示システムのスクリーンショット" />
+        <p class="m-0!">宇宙</p>
+      </div>
+      <div absolute left-19 w-20>
+        <img src="/kashima.jpg" rounded-full alt="鹿島アントラーズのメンバーが試合前にエンジンを組んでいる画像" />
+        <p class="m-0!">サッカー</p>
+      </div>
+      <div absolute top-5 left-37 w-20>
+        <img src="/atomic.jpg" rounded-full alt="アトミックのスキー板を履いたプレイヤーがスキーのターンをしている画像" />
+        <p class="m-0!">スキー</p>
+      </div>
+      <div absolute top-20 left-48 w-20>
+        <img src="/valorant.jpeg" rounded-full alt="Valorantのプレイ画面" />
+        <p class="m-0!">ゲーム</p>
+      </div>
     </div>
   </div>
   <div absolute right-35 bottom-60
@@ -142,7 +154,7 @@ bgCenter:
       :click-1-3="{opacity:0.1}"
       :click-3="{opacity:1}"
     >
-      Viteのドキュメント全部読む。
+      Vite Environment APIを理解する
     </li>
   </ul>
 </div>
@@ -182,8 +194,8 @@ bgCenter:
         :click-3="{opacity: 1}"
         :leave="{opacity: 1}"
         :duration="600">
-        <li>Vite+でたくさんの技術が密に連携する前に土台となる知識を得ておきたい</li>
-        <li>きちんとコントリビュートする心意気を忙しくなる前に作る</li>
+        <li>すべてがViteプラグインになる前に理解したい</li>
+        <li>SlidevをSSR化したい</li>
       </ul>
     </template>
   </v-switch>
@@ -226,7 +238,7 @@ bgCenter:
       :click-1-3="{opacity:0.1}"
       :click-3="{opacity:1}"
     >
-      Viteのドキュメント全部読む。
+      Vite Environment APIを理解する<span px2 bg-hex-515bd670 rounded>Inprogress</span>
     </li>
   </ul>
 </div>
@@ -247,7 +259,7 @@ bgCenter:
         :duration="600"
       >
         <p>vuejs/coreを読んで記事を一本書いた🎉</p>
-        <a href="https://zenn.dev/naofumik/articles/xxxxxxx" ><img src="/article.png" alt="笑顔でピースしている私"/></a>
+        <a href="https://zenn.dev/comm_vue_nuxt/articles/cc9649a445181a" ><img src="/article.png" alt="Zennの記事「「Options API は Composition API を土台にしている」ってどういうこと？」のOG画像"/></a>
       </div>
     </template>
     <template #2>
@@ -260,7 +272,7 @@ bgCenter:
       >
         <p>アーキテクチャをがっつり参考にしてポートフォリオサイトを作成🎉</p>
         <p>参考にしたポイントをまとめて記事にしたい...</p>
-        <a href="https://zenn.dev/naofumik/articles/xxxxxxx" ><img src="/portfolio.png" alt="笑顔でピースしている私"/></a>
+        <a href="https://www.petaxa.com/" ><img src="/portfolio.png" alt="筆者のポートフォリオサイトのメインビューのスクリーンショット"/></a>
       </div>
     </template>
     <template #3>
@@ -271,7 +283,8 @@ bgCenter:
         :click-4="{opacity: 0}"
         :duration="600"
       >
-        <p>翻訳しながら読み始めた！</p>
+        <p>ドキュメントはサラッと読んだ</p>
+        <p>slidevに組み込みながら勉強する</p>
       </div>
     </template>
   </v-switch>
