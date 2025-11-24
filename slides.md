@@ -18,12 +18,15 @@ bgCenter:
 ---
 bgCenter:
   x: 80
-  y: 80
+  y: 40
   deg: 150
 ---
 
 # 自己紹介
 
+<div v-click></div>
+<div v-click></div>
+<div v-click></div>
 <div v-click></div>
 
 <div relative w-full h-full>
@@ -46,7 +49,7 @@ bgCenter:
   <div absolute right-60
     v-motion
     :initial="{ x:-200, y: 200, opacity: 0 }"
-    :click-1="{ x: 0, y: 0, opacity: 1 }"
+    :click-2="{ x: 0, y: 0, opacity: 1 }"
     :duration="1000">
     <h3>好きなもの</h3>
     <div relative>
@@ -68,26 +71,26 @@ bgCenter:
       </div>
     </div>
   </div>
-  <div absolute right-35 bottom-60
-    v-motion
-    :initial="{ x:-230, y: 0, opacity: 0 }"
-    :click-1="{ x: 0, y: 0, opacity: 1 }"
-    :duration="1000">
-    <h3>技術</h3>
-    <div w-30 relative>
-      <img src="/vue.png" h-20 absolute left-10 alt="笑顔でピースしている私"/>
-      <img src="/viteplus.png" h-15 absolute top-15 left-25 alt="笑顔でピースしている私"/>
-      <img src="/standard.png" h-20 absolute top-25 left-10 alt="笑顔でピースしている私"/>
-    </div>
-  </div>
   <div absolute left-10 bottom-10
     v-motion
     :initial="{ x:250, y: 0, opacity: 0 }"
-    :click-1="{ x: 0, y: 0, opacity: 1 }"
+    :click-3="{ x: 0, y: 0, opacity: 1 }"
     :duration="1000">
     <h3>BEENOSインターン</h3>
     <p>サマーインターン: Groobee</p>
     <p>内定者インターン: AIX Buygent</p>
+  </div>
+  <div absolute right-35 bottom-60
+    v-motion
+    :initial="{ x:-230, y: 0, opacity: 0 }"
+    :click-4="{ x: 0, y: 0, opacity: 1 }"
+    :duration="1000">
+    <h3>技術</h3>
+    <div w-30 relative>
+      <img src="/vue.png" h-20 absolute left-10 alt="Vue.jsのロゴ"/>
+      <img src="/viteplus.png" h-15 absolute top-15 left-25 alt="viteplusのロゴ"/>
+      <img src="/standard.png" h-20 absolute top-25 left-10 alt="EcmaのロゴとW3cのロゴ"/>
+    </div>
   </div>
 </div>
 
@@ -119,7 +122,7 @@ bgCenter:
 layout: two-cols-header
 bgCenter:
   x: 40
-  y: 100
+  y: 70
   deg: 160
 ---
 
@@ -204,12 +207,12 @@ bgCenter:
 ---
 layout: two-cols-header
 bgCenter:
-  x: 80
-  y: 10
+  x: 70
+  y: 20
   deg: 20
 ---
 
-# 進捗(仮)
+# 進捗
 
 ::left::
 
@@ -294,7 +297,7 @@ bgCenter:
 layout: center
 bgCenter:
   x: 50
-  y: 100
+  y: 60
   deg: 20
 ---
 
