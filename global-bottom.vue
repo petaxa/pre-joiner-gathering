@@ -124,9 +124,11 @@ const fragmentShaderSource = `
     vec3 highlightColor = vec3(0.15, 0.20, 0.30);
     vec3 haze = mix(fogColor, highlightColor, length(q));
 
+    const float contrast = 1.5;
+    const float baseLevel = 0.3;
     float f = fbm(st+r);
     float alpha = f * mask;
-    vec3 finalColor = mix(bgColor, haze, clamp(alpha * 0.97, 0.3, 1.0));
+    vec3 finalColor = mix(bgColor, haze, clamp(alpha * contrast, baseLevel, 1.0));
 
     gl_FragColor = vec4(finalColor, 1.0);
   }
