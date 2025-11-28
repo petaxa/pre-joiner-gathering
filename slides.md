@@ -262,7 +262,7 @@ bgCenter:
         :duration="600"
       >
         <p>vuejs/coreを読んで記事を一本書いた🎉</p>
-        <a href="https://zenn.dev/comm_vue_nuxt/articles/cc9649a445181a" ><img src="/article.png" alt="Zennの記事「「Options API は Composition API を土台にしている」ってどういうこと？」のOG画像"/></a>
+        <a href="https://zenn.dev/comm_vue_nuxt/articles/cc9649a445181a" target=”_blank”><img src="/article.png" alt="Zennの記事「「Options API は Composition API を土台にしている」ってどういうこと？」のOG画像"/></a>
       </div>
     </template>
     <template #2>
@@ -275,7 +275,7 @@ bgCenter:
       >
         <p>アーキテクチャをがっつり参考にしてポートフォリオサイトを作成🎉</p>
         <p>参考にしたポイントをまとめて記事にしたい...</p>
-        <a href="https://www.petaxa.com/" ><img src="/portfolio.png" alt="筆者のポートフォリオサイトのメインビューのスクリーンショット"/></a>
+        <a href="https://www.petaxa.com/" target=”_blank”><img src="/portfolio.png" alt="筆者のポートフォリオサイトのメインビューのスクリーンショット"/></a>
       </div>
     </template>
     <template #3>
