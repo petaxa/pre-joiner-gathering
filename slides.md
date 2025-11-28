@@ -115,7 +115,7 @@ bgCenter:
 # WHY
 
 - 専門性を高める土台を作りたい
-- Nuxt2 → Nuxt3<span text-xs> (or Nuxt/Vue → ??? / ??? → Nuxt/Vue)</span>の技術選定に貢献したい
+- Nuxt2 → Nuxt3, 4<span text-xs> (or Nuxt/Vue → ??? / ??? → Nuxt/Vue)</span>の技術選定に貢献したい
 - JavaScriptの未来と近い距離で活動したい
 
 ---
