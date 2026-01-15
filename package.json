@@ -5,7 +5,9 @@
   "scripts": {
     "build": "slidev build",
     "dev": "slidev --open",
-    "export": "slidev export"
+    "export": "slidev export",
+    "prerender": "slidev-prerender",
+    "build:mpa": "pnpm build & pnpm export --format png --output dist-prerender/assets & pnpm prerender"
   },
   "dependencies": {
     "@slidev/cli": "^52.2.5",
@@ -14,7 +16,9 @@
     "vue": "^3.5.22"
   },
   "devDependencies": {
+    "playwright-chromium": "^1.57.0",
     "prettier": "^3.6.2",
-    "prettier-plugin-slidev": "^1.0.5"
+    "prettier-plugin-slidev": "^1.0.5",
+    "slidev-prerender": "0.0.1-alpha.1"
   }
 }
