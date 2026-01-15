@@ -31,8 +31,8 @@ importers:
         specifier: ^1.0.5
         version: 1.0.5(prettier@3.6.2)
       slidev-prerender:
-        specifier: 0.0.1-alpha.1
-        version: 0.0.1-alpha.1
+        specifier: 0.0.1-alpha.3
+        version: 0.0.1-alpha.3
 
 packages:
 
@@ -2331,8 +2331,8 @@ packages:
   sisteransi@1.0.5:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
 
-  slidev-prerender@0.0.1-alpha.1:
-    resolution: {integrity: sha512-XqjX7WvhDGkKkshYsmk+RinuYJlHCOp+++Fol9l/Tp8GBdqWytly5gXXt2/EVkpH+dTgzoPaBEBWqJsIZWq/Tg==}
+  slidev-prerender@0.0.1-alpha.3:
+    resolution: {integrity: sha512-EKHiV2XPCPbe8NabXsNO5qZsyiziFHYRzYmJflz1NCZQfmr/fogiGizzQ7/eotg7fNbMt/OrNF0gmM2r/zEaWA==}
     hasBin: true
 
   source-map-js@1.2.1:
@@ -5563,7 +5563,7 @@ snapshots:
 
   sisteransi@1.0.5: {}
 
-  slidev-prerender@0.0.1-alpha.1:
+  slidev-prerender@0.0.1-alpha.3:
     dependencies:
       '@playwright/test': 1.57.0
       markdown-it: 14.1.0
